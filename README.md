@@ -1,6 +1,6 @@
 # One Panchang — Backend
 
-Node.js API for Panchang calculations using Swiss Ephemeris.
+Node.js API for One Panchang that composes Panchang core data from Auspico Engine and adds One Panchang formatting/festival layers.
 
 **Production:** PWA at [https://www.onepanchang.com](https://www.onepanchang.com); set backend `FRONTEND_PUBLIC_ORIGIN` to `https://www.onepanchang.com,https://onepanchang.com`. API is commonly deployed at `https://api.onepanchang.com` (set the frontend `VITE_API_URL` / `BACKEND_API_ORIGIN` accordingly).
 
@@ -35,8 +35,7 @@ See [API.md](./API.md) for full documentation with curl examples.
 
 ## Licensing
 
-- **NOTICE** — Swiss Ephemeris attribution and AGPL compliance
-- **LICENSE** — Reference to Swiss Ephemeris license
+Swiss Ephemeris attribution/licensing is maintained in `Auspico/backend` (the upstream service that performs core astronomical calculations).
 
 ## Docker
 
