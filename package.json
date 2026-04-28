@@ -1,0 +1,33 @@
+{
+  "name": "onepanchang-backend",
+  "version": "1.0.0",
+  "description": "One Panchang API (Fastify)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "verify": "node verify-swisseph.js",
+    "test": "npm run test:festival && npm run test:panchang",
+    "test:festival": "tsx src/tests/festivalEngine.test.ts",
+    "test:panchang": "tsx src/tests/panchangLunarMonth.test.ts && tsx src/tests/panchangTithiBounds.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@swisseph/node": "^1.2.2",
+    "dotenv": "^17.3.1",
+    "fastify": "^5.8.2",
+    "geo-tz": "^8.1.5",
+    "ioredis": "^5.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "@vercel/node": "^5.6.22",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

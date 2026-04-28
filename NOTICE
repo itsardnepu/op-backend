@@ -1,0 +1,27 @@
+One Panchang Backend
+========================
+
+This software uses Swiss Ephemeris for astronomical calculations.
+
+Swiss Ephemeris
+---------------
+- Copyright (C) 1997 - 2021 Astrodienst AG, Switzerland
+- Authors: Dieter Koch and Alois Treindl
+- Licensed under: GNU Affero General Public License (AGPL) v3
+- Full license text: See third_party/swisseph/LICENSE and third_party/swisseph/agpl-3.0.txt
+  in the project repository, or https://www.gnu.org/licenses/agpl-3.0.html
+
+This backend uses Swiss Ephemeris via the @swisseph/node npm package, which
+bundles the Swiss Ephemeris library and ephemeris data files.
+
+Source Code
+-----------
+The complete source code of this backend is available in the project repository
+for AGPL network-use compliance. Users interacting with this service over the
+network are entitled to receive the corresponding source code.
+
+Ephemeris Data
+--------------
+Ephemeris data files are bundled with the @swisseph/node package. For custom
+or additional ephemeris files, see:
+https://github.com/aloistr/swisseph/tree/master/ephe
